@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f4f7fb">
+
+<title>Stock Learner | Learn the Stock Market</title>
+<meta name="description" content="Learn stock market basics, investing concepts and financial awareness with Stock Learner.">
+
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];
+t=b.createElement(e);t.async=!0;
+t.src=v;
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)
+}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1125590673136652');
+fbq('track', 'PageView');
+</script>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1125590673136652&ev=PageView&noscript=1"
+alt="">
+</noscript>
+<!-- End Meta Pixel -->
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px 16px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fb;
+  color: #172033;
+}
+
+.card {
+  max-width: 420px;
+  width: 100%;
+  padding: 30px 24px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #e5eaf1;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(20,35,60,.07);
+}
+
+.profile {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 18px;
+  border: 2px solid #e6edf5;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 28px;
+  letter-spacing: -.5px;
+}
+
+.subtitle {
+  margin: 0;
+  color: #526176;
+  line-height: 1.65;
+  font-size: 15px;
+}
+
+.info {
+  margin: 22px 0;
+  padding: 17px;
+  text-align: left;
+  border-radius: 12px;
+  background: #f7f9fc;
+  color: #3e4b5f;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.join {
+  display: block;
+  width: 100%;
+  padding: 15px 12px;
+  border-radius: 10px;
+  color: #fff;
+  background: #1877f2;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background .2s, transform .2s;
+}
+
+.join:hover {
+  background: #0866d6;
+}
+
+.join:active {
+  transform: scale(.98);
+}
+
+.note {
+  margin: 12px 0 0;
+  color: #68758a;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.divider {
+  height: 1px;
+  background: #e8edf4;
+  margin: 22px 0 16px;
+}
+
+.footer {
+  color: #68758a;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.footer p {
+  margin: 8px 0;
+}
+
+.footer a {
+  color: #526176;
+  text-decoration: underline;
+}
+
+@media (max-width: 360px) {
+  .card {
+    padding: 24px 18px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+}
+</style>
+</head>
+
+<body>
+<main class="card">
+
+  <img
+    class="profile"
+    src="profile.jpg"
+    alt="Stock Learner profile"
+    width="104"
+    height="104"
+  >
+
+  <h1>Stock Learner</h1>
+
+  <p class="subtitle">
+    Learn the basics of the stock market,
+    investing and financial awareness.
+  </p>
+
+  <div class="info">
+    <div>✓ Educational market updates</div>
+    <div>✓ Beginner-friendly learning resources</div>
+    <div>✓ Investment risk awareness</div>
+  </div>
+
+  <a
+    class="join"
+    id="subscribeButton"
+    href="https://t.me/+FnghiTGcmpJiNmVl"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Subscribe on Telegram →
+  </a>
+
+  <p class="note">
+    Tap the button above to open our Telegram channel.
+  </p>
+
+  <div class="divider"></div>
+
+  <div class="footer">
+    <p><strong>Important Disclaimer</strong></p>
+
+    <p>
+      This page is for educational purposes only and does
+      not provide personalized financial or investment advice.
+      No profit or return is guaranteed.
+    </p>
+
+    <p>
+      Stock market investments are subject to market risks.
+      Please research carefully before making investment decisions.
+    </p>
+
+    <p>© 2026 Stock Learner. All rights reserved.</p>
+  </div>
+
+</main>
+
+<script>
+(function () {
+  var button = document.getElementById('subscribeButton');
+
+  button.addEventListener('click', function () {
+    if (typeof window.fbq === 'function') {
+      fbq('trackCustom', 'TelegramJoinClick');
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
