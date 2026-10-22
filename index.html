@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#f4f7fb">
+<meta name="theme-color" content="#f5f8ff">
 
-<title>Stock Learner | Learn the Stock Market</title>
-<meta name="description" content="Learn stock market basics, investing concepts and financial awareness with Stock Learner.">
+<title>Stock Learner | Market Education</title>
+<meta name="description" content="Explore stock market basics, investing concepts and financial awareness with Stock Learner.">
 
 <!-- Meta Pixel -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;
+if(!f._fbq)f.fbq=n;
 n.push=n;n.loaded=!0;n.version='2.0';
 n.queue=[];
 t=b.createElement(e);t.async=!0;
@@ -47,111 +47,180 @@ body {
   justify-content: center;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
-  background: #f4f7fb;
-  color: #172033;
+  color: #18243a;
+  background:
+    radial-gradient(ellipse at top, #e4edff 0%, transparent 55%),
+    #f5f8ff;
 }
 
 .card {
-  max-width: 420px;
   width: 100%;
-  padding: 30px 24px;
+  max-width: 390px;
+  padding: 30px 24px 22px;
   text-align: center;
-  background: #fff;
-  border: 1px solid #e5eaf1;
-  border-radius: 18px;
-  box-shadow: 0 10px 35px rgba(20,35,60,.07);
+  background: rgba(255,255,255,.97);
+  border: 1px solid #e5ebf5;
+  border-radius: 22px;
+  box-shadow: 0 18px 55px rgba(34,67,125,.10);
+}
+
+.top-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 22px;
+  padding: 7px 12px;
+  border: 1px solid #dce7ff;
+  border-radius: 30px;
+  background: #f2f6ff;
+  color: #2858a8;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  background: #3978ed;
+  border-radius: 50%;
 }
 
 .profile {
-  width: 104px;
-  height: 104px;
+  display: block;
+  width: 94px;
+  height: 94px;
+  margin: 0 auto 17px;
   border-radius: 50%;
   object-fit: cover;
-  display: block;
-  margin: 0 auto 18px;
-  border: 2px solid #e6edf5;
+  border: 3px solid #fff;
+  outline: 2px solid #dce7ff;
+  box-shadow: 0 5px 18px rgba(37,87,170,.13);
 }
 
 h1 {
   margin: 0 0 10px;
-  font-size: 28px;
-  letter-spacing: -.5px;
+  color: #172b4d;
+  font-size: 29px;
+  font-weight: 750;
+  letter-spacing: -.8px;
 }
 
 .subtitle {
-  margin: 0;
-  color: #526176;
-  line-height: 1.65;
-  font-size: 15px;
+  max-width: 290px;
+  margin: 0 auto;
+  color: #68758a;
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 .info {
-  margin: 22px 0;
+  display: grid;
+  gap: 13px;
+  margin: 23px 0;
   padding: 17px;
   text-align: left;
-  border-radius: 12px;
-  background: #f7f9fc;
-  color: #3e4b5f;
-  font-size: 14px;
-  line-height: 2;
+  background: #f7f9fd;
+  border: 1px solid #edf1f7;
+  border-radius: 14px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: #34435b;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.check {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  color: #2865d8;
+  background: #e7efff;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: bold;
 }
 
 .join {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   width: 100%;
-  padding: 15px 12px;
-  border-radius: 10px;
+  min-height: 52px;
+  padding: 15px;
+  border-radius: 12px;
   color: #fff;
-  background: #1877f2;
+  background: linear-gradient(135deg, #2878f5, #1558d6);
+  box-shadow: 0 7px 17px rgba(36,101,220,.22);
   text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-  transition: background .2s, transform .2s;
+  font-size: 15px;
+  font-weight: 700;
+  transition: transform .2s, box-shadow .2s;
 }
 
 .join:hover {
-  background: #0866d6;
+  box-shadow: 0 10px 23px rgba(36,101,220,.28);
+  transform: translateY(-1px);
 }
 
 .join:active {
   transform: scale(.98);
 }
 
+.arrow {
+  font-size: 19px;
+  line-height: 1;
+}
+
 .note {
-  margin: 12px 0 0;
-  color: #68758a;
-  font-size: 12px;
-  line-height: 1.6;
+  margin: 11px 0 0;
+  color: #8792a4;
+  font-size: 11px;
 }
 
 .divider {
   height: 1px;
-  background: #e8edf4;
-  margin: 22px 0 16px;
+  margin: 23px 0 16px;
+  background: #edf0f5;
 }
 
 .footer {
-  color: #68758a;
-  font-size: 12px;
+  color: #8590a2;
+  font-size: 11px;
   line-height: 1.7;
 }
 
-.footer p {
-  margin: 8px 0;
+.footer strong {
+  color: #59677d;
+  font-size: 11px;
 }
 
-.footer a {
-  color: #526176;
-  text-decoration: underline;
+.footer p {
+  margin: 7px 0;
 }
 
 @media (max-width: 360px) {
   .card {
-    padding: 24px 18px;
+    padding: 25px 18px 19px;
   }
 
   h1 {
-    font-size: 25px;
+    font-size: 26px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .join {
+    transition: none;
   }
 }
 </style>
@@ -160,25 +229,39 @@ h1 {
 <body>
 <main class="card">
 
+  <div class="top-label">
+    <span class="dot"></span>
+    Market Education
+  </div>
+
   <img
     class="profile"
     src="profile.jpg"
     alt="Stock Learner profile"
-    width="104"
-    height="104"
+    width="94"
+    height="94"
   >
 
   <h1>Stock Learner</h1>
 
   <p class="subtitle">
-    Learn the basics of the stock market,
-    investing and financial awareness.
+    Learn the market. Understand the risks.
+    Build your financial knowledge.
   </p>
 
   <div class="info">
-    <div>✓ Educational market updates</div>
-    <div>✓ Beginner-friendly learning resources</div>
-    <div>✓ Investment risk awareness</div>
+    <div class="info-item">
+      <span class="check">✓</span>
+      <span>Market insights &amp; updates</span>
+    </div>
+    <div class="info-item">
+      <span class="check">✓</span>
+      <span>Learning resources for beginners</span>
+    </div>
+    <div class="info-item">
+      <span class="check">✓</span>
+      <span>Financial awareness &amp; risk education</span>
+    </div>
   </div>
 
   <a
@@ -188,30 +271,27 @@ h1 {
     target="_blank"
     rel="noopener noreferrer"
   >
-    Subscribe on Telegram →
+    <span>Join on Telegram</span>
+    <span class="arrow">→</span>
   </a>
 
   <p class="note">
-    Tap the button above to open our Telegram channel.
+    Tap above to explore our Telegram community.
   </p>
 
   <div class="divider"></div>
 
   <div class="footer">
-    <p><strong>Important Disclaimer</strong></p>
-
+    <strong>Important Disclaimer</strong>
     <p>
-      This page is for educational purposes only and does
-      not provide personalized financial or investment advice.
-      No profit or return is guaranteed.
+      For educational purposes only. No guaranteed returns
+      or personalized investment advice.
     </p>
-
     <p>
-      Stock market investments are subject to market risks.
-      Please research carefully before making investment decisions.
+      Investments are subject to market risks.
+      Please do your own research.
     </p>
-
-    <p>© 2026 Stock Learner. All rights reserved.</p>
+    <p>© 2026 Stock Learner · All rights reserved.</p>
   </div>
 
 </main>
